@@ -1,0 +1,27 @@
+ssCRISPR was created by Austin Rottinghaus.
+
+ssCRISPR can be used to design gRNAs with strain-specific cleavage profiles.
+
+Download the application and ensure that the ssCRISPR file is in the same locations as the following documents:
+1. Cas_icon3.ico
+2. finalized_model_cpf1.sav
+3. finalized_model_cas9.sav
+4. All_NCBI_Strains.xlsx
+
+When you run the program, you will be prompted to input the following criteria for gRNA design:
+1. Your email address - Note: This is only used to request genome sequences from NCBI. You won't recieve any emails.
+2. Whether you are using Cas9, Cpf1, or another Cas protein
+3. PAM sequence in A, T, C, and G nucleotides - The program does not accept multi-nucleotide letters, such as R, S, and N.
+4. The desired number of nucleotides of specificity
+5. Target sequence length
+6. PAM orientation
+7. List of target strains
+8. List of non-target strains
+
+User-provided FASTA files can be used as target and non-target strains.
+
+If you want to update the ALL_NCBI_Strains.xlsx file to include the most recent catalogue of sequences,
+the table can be downloaded from https://www.ncbi.nlm.nih.gov/genome/browse#!/prokaryotes/.
+Be sure to filter by bacteria and complete genomes. Reorder the excel sheet in the same way as the one provided.
+The organism name and strain name can be combined into a new column using =IF(ISNUMBER(SEARCH(B2,A2)),A2,A2&" "&B2) in cell C2.
+Drag the formula for all organisms and strains.
